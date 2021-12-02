@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:fragment="common-header">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <title>Criket scoring </title>
+
+  <!-- Bootstrap CSS -->
+ <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"></link>
+ 
+  <!-- bootstrap theme -->
+ <link th:href="@{/css/bootstrap-theme.css}" rel="stylesheet"/>
+  <!--external css-->
+  <!-- font icon -->
+ <link th:href="@{/css/elegant-icons-style.css}" rel="stylesheet" />
+ <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" />
+  <!-- full calendar css-->
+ <!-- <link th:href="@{/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css}" rel="stylesheet" /> -->
+ <!-- <link rel="stylesheet" type="text/css" th:href="@{assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css}" />
+ <link th:href="@{/assets/fullcalendar/fullcalendar/fullcalendar.css}" rel="stylesheet" /> -->
+  <!-- easy pie chart-->
+ <link th:href="@{assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css}" rel="stylesheet" type="text/css" media="screen" />
+  <!-- owl carousel -->
+<!--   <link rel="stylesheet" href="@{css/owl.carousel.css}" type="text/css"/> -->
+ <link th:href="@{/css/jquery-jvectormap-1.2.2.css}" rel="stylesheet"/>
+  <!-- Custom styles -->
+ <!--  <link rel="stylesheet" href="@{/css/fullcalendar.css}"/> -->
+ <link th:href="@{/css/widgets.css}" rel="stylesheet"/>
+ <link th:href="@{/css/style.css}" rel="stylesheet"/>
+ <link th:href="@{/css/style-responsive.css}" rel="stylesheet" />
+ <link th:href="@{/css/xcharts.min.css}" rel=" stylesheet"/>
+ <link th:href="@{/css/jquery-ui-1.10.4.min.css}" rel="stylesheet"/>
+</head>
+
+<body>
+	<div th:fragment="navbar">
+  <!-- container section start -->
+    <header class="header dark-bg">
+      <div class="toggle-nav">
+        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+      </div>
+
+      <!--logo start-->
+      <a th:href="@{/}" class="logo">Criket<span class="lite">Score</span></a>
+      <!--logo end-->
+
+    <div class="nav search-row" id="top_menu">
+      
+        <!--  search form start -->
+       
+      </div>
+
+   
+    </header>
+    <!--header end-->
+
+        <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a class="" th:href="@{/}" >
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                      </a>
+          </li>
+          <li class="sub-menu">
+            <a class="" th:href="@{/Team}">
+             <span>Create Team</span></a>
+          </li>
+          <li class="sub-menu">
+            <a class="" th:href="@{/Player}">
+	            <span>Create Player</span>
+            </a>
+          </li>
+          <li>
+             <a class="" th:href="@{/tournament}">
+                <span>Create Tournament</span>
+            </a>
+          </li>
+           <li>
+             <a class="" th:href="@{/match}">
+                <span>Create Match</span>
+            </a>
+          </li>
+          <li>
+             <a class="" th:href="@{/play}">
+                <span>Play & Score</span>
+            </a>
+          </li>
+           <li>
+             <a class="" th:href="@{/Score}">
+                <span>Score Board</span>
+            </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    </div>
+</body>
+
+</html>
